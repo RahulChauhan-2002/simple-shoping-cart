@@ -3,7 +3,7 @@ import Home from './Pages/Home';
 import Cart from './Pages/Cart';
 
 import './App.css'
-import { Route, Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -12,10 +12,10 @@ function App() {
       <div>
         <Navbar/>
       </div>
-      <Router>
+      <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Cart' element={<Cart/>}/>
-      </Router>
+      </Routes>
     </>
   )
 }
